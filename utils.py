@@ -103,7 +103,7 @@ class PreprocessFrame(gym.ObservationWrapper):
     def observation(self, obs):
         new_frame = cv2.cvtColor(obs,cv2.COLOR_RGB2GRAY) #converting from color to gray-scale
         resized_screen = cv2.resize(new_frame, self.shape[1:], interpolation=cv2.INTER_AREA) #resizing, don't quite understand
-        new_obs = np.array(resized_screen, dtype=np.bool).reshape(self.shape)  #making into numpy array, swapping axis, of datatype and shape. DONT GET THIS
+        new_obs = np.array(resized_screen, dtype=np.uint8).reshape(self.shape)  #making into numpy array, swapping axis, of datatype and shape. DONT GET THIS
         new_obs = new_obs/255.0 #normalizing to be between 0 and 1
         return new_obs
 
