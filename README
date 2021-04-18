@@ -1,0 +1,3 @@
+This code has be taken from Phil Tabor's coure on RL (https://www.udemy.com/course/deep-q-learning-from-paper-to-code/). 
+It is an implemenation of DeepMind's 2015 paper (https://deepmind.com/research/publications/human-level-control-through-deep-reinforcement-learning).
+This has been sucessfully tested on Pong and Breakout. It should theoreticaly work on all Atari games within the 2600 library (although there are certainly better algorithms over the last few years).
